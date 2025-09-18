@@ -27,8 +27,8 @@ jobs:
         with:
           policies: cpl, und
           api.key: ${{ secrets.SC_API_KEY }}
-          deptrack.upload: false
+          deptrack.upload: true
           deptrack.url: 'https://dependency-track.scanoss.xyz/'
           deptrack.projectname: 'rdkcentral/telemetry'
           deptrack.projectversion: '1.0.0'
-          deptrack.apikey: ${{ secrets.DT_API_KEY }}
+          deptrack.apikey: ${{ secrets.SC_DT_API_KEY }}
