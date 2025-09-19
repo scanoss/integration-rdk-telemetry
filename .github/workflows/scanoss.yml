@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pull-requests: write
   checks: write
   actions: read
@@ -23,9 +23,9 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@v1.2.2
+        uses: scanoss/code-scan-action@feat/annotations
         with:
-          policies: cpl, und
+          policies: cpl, und, dt
           api.key: ${{ secrets.SC_API_KEY }}
           deptrack.upload: true
           deptrack.url: 'https://dependency-track.scanoss.xyz/'
