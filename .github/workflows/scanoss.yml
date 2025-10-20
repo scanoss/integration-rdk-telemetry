@@ -23,8 +23,9 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@feat/annotations
+        uses: scanoss/code-scan-action@feat/SP-3125_delta-scan
         with:
+          scanMode: delta
           policies: cpl, und, dt
           api.key: ${{ secrets.SC_API_KEY }}
           deptrack.upload: true
