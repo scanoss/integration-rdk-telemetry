@@ -23,9 +23,9 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@feat/SP-3125_delta-scan
+        uses: scanoss/code-scan-action@v1.3.0
         with:
-          scanMode: normal
+          scanMode: delta
           policies: cpl, und, dt
           api.key: ${{ secrets.SC_API_KEY }}
           deptrack.upload: true
