@@ -23,7 +23,7 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@feat/SP-3534_add-export
+        uses: scanoss/code-scan-action@v1.3.1
         with:
           scanMode: full
           policies: cpl, und, dt
