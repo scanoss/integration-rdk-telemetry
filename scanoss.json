@@ -14,13 +14,22 @@
         "purl": "pkg:github/rdkcentral/rbus"
       },
       {
-        "purl": "pkg:github/rdkcentral/telemetry"
+        "purl": "pkg:github/rdkcentral/telemetry",
+        "license": "Apache-2.0"
       }
     ],
     "replace": [
       {
         "path": "source/test/ccspinterface/gtest_main.cpp",
         "purl": "pkg:github/rdkcentral/notify-component",
+        "replace_with": "pkg:github/rdkcentral/telemetry"
+      },
+      {
+        "purl": "pkg:github/rdkcentral/start-parodus",
+        "replace_with": "pkg:github/rdkcentral/telemetry"
+      },
+      {
+        "purl": "pkg:github/rdkcentral/tr69hostif",
         "replace_with": "pkg:github/rdkcentral/telemetry"
       }
     ]
