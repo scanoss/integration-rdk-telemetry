@@ -23,7 +23,7 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@v1.3.1
+        uses: scanoss/code-scan-action@v1.5.0
         with:
           scanMode: full
           policies: cpl, und, dt
