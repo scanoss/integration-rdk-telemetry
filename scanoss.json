@@ -1,5 +1,14 @@
 {
   "settings": {
+    "file_snippet": {
+      "ranking_enabled": true,
+      "ranking_threshold": 9,
+      "min_snippet_hits": 3,
+      "min_snippet_lines": 5,
+      "honour_file_exts": true,
+      "skip_headers": true,
+      "skip_headers_limit": 50
+    },
     "skip": {
       "patterns": {},
       "sizes": {}

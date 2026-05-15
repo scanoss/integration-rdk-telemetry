@@ -6,6 +6,7 @@
 #include "decrypt.h"
 
 
+
 const char *copyright_sources[] = {"component_declared", "file_header", "license_file", "scancode"};
 
 static bool get_first_copyright(uint8_t *key, uint8_t *subkey, int subkey_ln, uint8_t *data, uint32_t datalen, int iteration, void *ptr)
