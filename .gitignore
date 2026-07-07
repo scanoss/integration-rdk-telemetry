@@ -1,0 +1,7 @@
+
+tmp/
+*.json
+.idea/
+.scanoss/
+*.wfp
+!scanoss.json

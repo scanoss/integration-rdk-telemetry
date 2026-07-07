@@ -1,0 +1,46 @@
+{
+  "settings": {
+    "file_snippet": {
+      "ranking_enabled": true,
+      "ranking_threshold": 9,
+      "min_snippet_hits": 3,
+      "min_snippet_lines": 5,
+      "honour_file_exts": true,
+      "skip_headers": true,
+      "skip_headers_limit": 50
+    },
+    "skip": {
+      "patterns": {},
+      "sizes": {}
+    }
+  },
+  "bom": {
+    "include": [
+      {
+        "purl": "pkg:github/rdkcentral/docker-device-mgt-service-test"
+      },
+      {
+        "purl": "pkg:github/rdkcentral/rbus"
+      },
+      {
+        "purl": "pkg:github/rdkcentral/telemetry",
+        "license": "Apache-2.0"
+      }
+    ],
+    "replace": [
+      {
+        "path": "source/test/ccspinterface/gtest_main.cpp",
+        "purl": "pkg:github/rdkcentral/notify-component",
+        "replace_with": "pkg:github/rdkcentral/telemetry"
+      },
+      {
+        "purl": "pkg:github/rdkcentral/start-parodus",
+        "replace_with": "pkg:github/rdkcentral/telemetry"
+      },
+      {
+        "purl": "pkg:github/rdkcentral/tr69hostif",
+        "replace_with": "pkg:github/rdkcentral/telemetry"
+      }
+    ]
+  }
+}

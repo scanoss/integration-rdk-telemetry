@@ -1,9 +1,10 @@
 name: Build Component in Native Environment
 
 on:
-  pull_request:
-    branches: [ develop ]
-    paths: ['**/*.c', '**/*.cpp', '**/*.cc', '**/*.cxx', '**/*.h', '**/*.hpp']
+  workflow_dispatch:
+#  pull_request:
+#    branches: [ develop ]
+#    paths: ['**/*.c', '**/*.cpp', '**/*.cc', '**/*.cxx', '**/*.h', '**/*.hpp']
 
 jobs:
   build-telemetry-coverity-on-pr:
