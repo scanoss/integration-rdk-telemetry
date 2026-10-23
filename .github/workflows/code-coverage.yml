@@ -8,6 +8,9 @@ jobs:
   execute-unit-code-coverage-report-on-release:
     name: Test coverage report for release
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     container:
       image: ghcr.io/rdkcentral/docker-rdk-ci:latest
 
